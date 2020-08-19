@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce564992-ffa9-4bac-a820-58fa04b05728" name="Default Changelist" comment="" />
+    <list default="true" id="ce564992-ffa9-4bac-a820-58fa04b05728" name="Default Changelist" comment="wip: first commit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.js" root0="SKIP_INSPECTION" />
@@ -40,11 +63,35 @@
       <updated>1597826944325</updated>
       <workItem from="1597826945329" duration="6614000" />
       <workItem from="1597834022816" duration="594000" />
+      <workItem from="1597834626891" duration="53000" />
     </task>
+    <task id="LOCAL-00001" summary="wip: first commit">
+      <created>1597834669749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597834669749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="wip: first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip: first commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="360" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597826975201">
@@ -79,5 +126,9 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="788" y="350" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1597834536675" />
+    <state x="872" y="425" key="Vcs.Push.Dialog.v2" timestamp="1597834673469">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="872" y="425" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1597834673469" />
   </component>
 </project>
