@@ -44,8 +44,8 @@ request({
     method: 'GET'
 }, (error, response, body) => {
     strHalfLifeList = body
-    strHalfLifeList = strHalfLifeList.replace(/! Checksum: (.+)/g, '')
-    strHalfLifeList = strHalfLifeList.replace(/! Title: (.+)/g, '! Title: HalfLifeList')
+    strHalfLifeList = strHalfLifeList.replace(/! Checksum: (.+)/, '')
+    strHalfLifeList = strHalfLifeList.replace(/! Title: (.+)/, '! Title: HalfLifeList')
     strHalfLifeList = strHalfLifeList.trim()
     fs.writeFileSync(path + 'HalfLifeList.txt', strHalfLifeList, 'UTF-8')
 });
@@ -57,7 +57,10 @@ request({
     method: 'GET'
 }, (error, response, body) => {
     strAntiAD = body
-    strAntiAD = strAntiAD.replace(/!TITLE=(.+)/g, '!TITLE=AntiAD')
+    strAntiAD = strAntiAD.replace(/!TITLE=(.+)/, '[Adblock Plus 2.0]\n! Title: AntiAD')
+    strAntiAD = strAntiAD.replace(/!VER=(.+)/, '! Version: $1')
+    strAntiAD = strAntiAD.replace(/!URL=(.+)/, '! Homepage: $1')
+    strAntiAD = strAntiAD.replace(/!TOTAL_LINES=(.+)/g, '')
     strAntiAD = strAntiAD.trim()
     fs.writeFileSync(path + 'AntiAD.txt', strAntiAD, 'UTF-8')
 });
