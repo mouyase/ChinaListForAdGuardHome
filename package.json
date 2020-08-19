@@ -1,0 +1,12 @@
+{
+  "name": "ChinaListForAdGuardHome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
