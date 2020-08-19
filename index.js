@@ -18,7 +18,7 @@ request({
     strChinaList = strChinaList.replace(/server=\/(.+)\/[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/g, '[/$1/]https://dns.alidns.com/dns-query')
     strChinaList = strChinaList.replace(/([\s])[\s]*/g, '$1')
     strChinaList = strChinaList.trim()
-    fs.writeFileSync(path + 'ChinaList', strChinaList, 'UTF-8')
+    fs.writeFileSync(path + 'ChinaList.txt', strChinaList, 'UTF-8')
     request({
         url: 'https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/dnsmasq.conf',
         method: 'GET'
@@ -29,11 +29,11 @@ request({
         strGoogleHostsList = strGoogleHostsList.replace('[/localhost/]https://dns.quad9.net/dns-query', '')
         strGoogleHostsList = strGoogleHostsList.replace(/([\s])[\s]*/g, '$1')
         strGoogleHostsList = strGoogleHostsList.trim()
-        fs.writeFileSync(path + 'GoogleHostsList', strGoogleHostsList, 'UTF-8')
+        fs.writeFileSync(path + 'GoogleHostsList.txt', strGoogleHostsList, 'UTF-8')
         strChinaWhiteList = strChinaList + '\n' + strGoogleHostsList + '\nhttps://dns.quad9.net/dns-query\nhttps://dns.cloudflare.com/dns-query\nhttps://dns.google/dns-query'
-        fs.writeFileSync(path + 'ChinaWhiteList', strChinaWhiteList, 'UTF-8')
+        fs.writeFileSync(path + 'ChinaWhiteList.txt', strChinaWhiteList, 'UTF-8')
         strChinaBlackList = strChinaList + '\n' + strGoogleHostsList + '\nhttps://dns.alidns.com/dns-query'
-        fs.writeFileSync(path + 'ChinaBlackList', strChinaBlackList, 'UTF-8')
+        fs.writeFileSync(path + 'ChinaBlackList.txt', strChinaBlackList, 'UTF-8')
     });
 });
 

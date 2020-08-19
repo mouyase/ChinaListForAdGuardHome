@@ -14,9 +14,9 @@
 
 |文件名|地址|
 |-|-|
-|ChinaList|[https://adguard.yojigen.tech/ChinaList](https://adguard.yojigen.tech/ChinaList)|
-|GoogleHostsList|[https://adguard.yojigen.tech/GoogleHostsList](https://adguard.yojigen.tech/GoogleHostsList)|
-|ChinaWhiteList|[https://adguard.yojigen.tech/ChinaWhiteList](https://adguard.yojigen.tech/ChinaWhiteList)|
-|GoogleHostsList|[https://adguard.yojigen.tech/GoogleHostsList](https://adguard.yojigen.tech/GoogleHostsList)|
+|ChinaList|[https://adguard.yojigen.tech/ChinaList.txt](https://adguard.yojigen.tech/ChinaList.txt)|
+|GoogleHostsList|[https://adguard.yojigen.tech/GoogleHostsList.txt](https://adguard.yojigen.tech/GoogleHostsList.txt)|
+|ChinaWhiteList|[https://adguard.yojigen.tech/ChinaWhiteList.txt](https://adguard.yojigen.tech/ChinaWhiteList.txt)|
+|GoogleHostsList|[https://adguard.yojigen.tech/GoogleHostsList.txt](https://adguard.yojigen.tech/GoogleHostsList.txt)|
 |HalfLifeList.txt|[https://adguard.yojigen.tech/HalfLifeList.txt](https://adguard.yojigen.tech/HalfLifeList.txt)|
 |AntiAD.txt|[https://adguard.yojigen.tech/AntiAD.txt](https://adguard.yojigen.tech/AntiAD.txt)|
