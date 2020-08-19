@@ -4,9 +4,6 @@ const request = require('request')
 const path = 'dist/'
 let strChinaList, strGoogleHosts, strChinaWhiteList, strChinaBlackList
 
-fs.mkdir(path, err => {
-})
-
 request({
     url: 'https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf',
     method: 'GET'
