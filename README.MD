@@ -12,6 +12,10 @@
 
 `HalfLifeList.txt`与`AntiAD.txt`是目前两个比较适合大陆的广告屏蔽表，推荐大家使用
 
+
+## 使用方式
+讲文件内容复制到`DNS 设置 / 上游 DNS 服务器`中，保存即可
+
 |文件名|地址|
 |-|-|
 |ChinaList|[https://adguard.yojigen.tech/ChinaList.txt](https://adguard.yojigen.tech/ChinaList.txt)|

@@ -32,7 +32,7 @@ request({
         fs.writeFileSync(path + 'GoogleHostsList.txt', strGoogleHostsList, 'UTF-8')
         strChinaWhiteList = strChinaList + '\n' + strGoogleHostsList + '\nhttps://dns.quad9.net/dns-query\nhttps://dns.cloudflare.com/dns-query\nhttps://dns.google/dns-query'
         fs.writeFileSync(path + 'ChinaWhiteList.txt', strChinaWhiteList, 'UTF-8')
-        strChinaBlackList = strChinaList + '\n' + strGoogleHostsList + '\nhttps://dns.alidns.com/dns-query'
+        strChinaBlackList = strChinaList + '\n' + strGoogleHostsList + '\nhttps://dns.alidns.com/dns-query\n114.114.114.114\n119.29.29.29\n180.76.76.76'
         fs.writeFileSync(path + 'ChinaBlackList.txt', strChinaBlackList, 'UTF-8')
     });
 });
