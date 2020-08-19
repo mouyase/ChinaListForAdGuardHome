@@ -57,7 +57,7 @@ request({
     method: 'GET'
 }, (error, response, body) => {
     strAntiAD = body
-    strAntiAD = strAntiAD.replace(/![\s]Title: (.+)/g, '! Title: AntiAD')
+    strAntiAD = strAntiAD.replace(/!TITLE=(.+)/g, '!TITLE=AntiAD')
     strAntiAD = strAntiAD.trim()
     fs.writeFileSync(path + 'AntiAD.txt', strAntiAD, 'UTF-8')
 });
