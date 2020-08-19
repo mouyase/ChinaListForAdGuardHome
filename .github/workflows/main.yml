@@ -16,17 +16,16 @@ jobs:
 
     - uses: actions/checkout@v2
 
-    - name: Copy Files
-      run: |
-        mkdir dist
-        cp CNAME dist/CNAME
-        cp README.MD dist/README.MD
-
     - name: Build
       run: |
         sudo npm i yarn -g
         yarn
         yarn run build
+
+    - name: Copy Files
+      run: |
+        cp CNAME dist/CNAME
+        cp README.MD dist/README.MD
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
