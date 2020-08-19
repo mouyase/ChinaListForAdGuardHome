@@ -44,7 +44,8 @@ request({
     method: 'GET'
 }, (error, response, body) => {
     strHalfLifeList = body
-    strHalfLifeList = strHalfLifeList.replace(/![\s]Title: (.+)/g, '! Title: HalfLifeList')
+    strHalfLifeList = strHalfLifeList.replace(/! Checksum: (.+)/g, '')
+    strHalfLifeList = strHalfLifeList.replace(/! Title: (.+)/g, '! Title: HalfLifeList')
     strHalfLifeList = strHalfLifeList.trim()
     fs.writeFileSync(path + 'HalfLifeList.txt', strHalfLifeList, 'UTF-8')
 });
