@@ -21,8 +21,8 @@ jobs:
         sudo npm i yarn -g
         yarn
         yarn run build
-        cp -f CNAME dist/CNAME
-        cp -f README.MD dist/README.MD
+        cp CNAME dist/CNAME
+        cp README.MD dist/README.MD
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
