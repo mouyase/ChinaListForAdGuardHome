@@ -1,11 +1,11 @@
 name: Build&Deploy
 
 on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '0/10 * * * *'
+    push:
+        branches:
+            - master
+    schedule:
+        - cron: '0 0 * * *'
 
 jobs:
   build:
