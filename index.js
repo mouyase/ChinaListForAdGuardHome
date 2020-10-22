@@ -57,10 +57,7 @@ request({
     method: 'GET'
 }, (error, response, body) => {
     strAntiAD = body
-    strAntiAD = strAntiAD.replace(/!TITLE=(.+)/, '[Adblock Plus 2.0]\n! Title: AntiAD')
-    strAntiAD = strAntiAD.replace(/!VER=(.+)/, '! Version: $1')
-    strAntiAD = strAntiAD.replace(/!URL=(.+)/, '! Homepage: $1')
-    strAntiAD = strAntiAD.replace(/!TOTAL_LINES=(.+)/g, '')
+    strAntiAD = strAntiAD.replace(/!Title: (.+)/, '!Title: AntiAD')
     strAntiAD = strAntiAD.trim()
     fs.writeFileSync(path + 'AntiAD.txt', strAntiAD, 'UTF-8')
 });
