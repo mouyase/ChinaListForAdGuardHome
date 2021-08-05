@@ -27,7 +27,6 @@ jobs:
       run: |
         cp CNAME dist/CNAME
         cp README.MD dist/README.MD
-        cp YojigenList.txt dist/YojigenList.txt
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
