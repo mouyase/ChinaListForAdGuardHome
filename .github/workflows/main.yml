@@ -29,7 +29,6 @@ jobs:
         cp README.MD dist/README.MD
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+      uses: actions/deploy-pages@v4.0.4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        artifact_name: ./dist
