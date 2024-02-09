@@ -4,9 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "node index.js"
+    "build": "node index.js",
+    "lint": "eslint \"**/*.{js,ts,jsx,tsx}\""
   },
+  "type": "module",
   "dependencies": {
-    "request": "^2.88.2"
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5"
   }
 }
