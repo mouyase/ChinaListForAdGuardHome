@@ -20,7 +20,8 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4.0.2
 
-    - uses: actions/checkout@v4.1.1
+    - name: Checkout Project
+      uses: actions/checkout@v4.1.1
 
     - name: Build
       run: |
@@ -33,11 +34,10 @@ jobs:
         cp CNAME dist/CNAME
         cp README.MD dist/README.MD
 
-    - name: Upload artifact
+    - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./dist
 
     - name: Deploy to GitHub Pages
-      id: deployment
       uses: actions/deploy-pages@v4.0.4
