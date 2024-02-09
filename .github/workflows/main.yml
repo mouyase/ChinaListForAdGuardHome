@@ -1,10 +1,5 @@
 name: Build&Deploy
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 on:
     push:
         branches:
@@ -12,9 +7,17 @@ on:
     schedule:
         - cron: '0 0 * * *'
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
 
     steps:
     - name: Setup Node.js
