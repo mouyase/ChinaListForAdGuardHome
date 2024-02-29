@@ -32,11 +32,6 @@ jobs:
         yarn
         yarn run build
 
-    - name: Copy Files
-      run: |
-        cp CNAME dist/CNAME
-        cp README.MD dist/README.MD
-
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
       with:
